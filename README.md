@@ -1,8 +1,5 @@
-# React quickstart template
-
-This is a quickstart react template for fast prototyping. It has type-checking with TypeScript, but will compile regardless of the type errors.
-
-Utilizes Styled Components, Webpack, and Babel.
+# Hemingnay front
+The front-end for [Hemingnay](https://github.com/xbexbex/hemingnay), an extremely bad fanfiction generator.
 
 ### Using development server
 
@@ -22,13 +19,7 @@ npm run build
 npm run type-check
 ```
 
-## Docker  
-A docker image for this repository can be found [here.](https://hub.docker.com/repository/docker/xbexbex/react-quickstart-template)  
-### Running and installing
-```shell
-docker run -p 5000:5000 xbexbex/react-quickstart-template
-```
-### Or building locally
+### Using docker
 ```shell
 docker build . -t <name-for-the-project>
 docker run <name-for-the-project>
