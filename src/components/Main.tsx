@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Input from './Input';
 
 import { Theme } from '../styles';
 
@@ -8,24 +9,15 @@ type Props = {}
 const Main: React.FC<Props> = ({ }) => {
 
   return (
-    <Col>
-      <Row>
-        <Container>
-          <Heading>This</Heading>
-        </Container>
-        <Container>
-          <Heading>is</Heading>
-        </Container>
-      </Row>
-      <Row>
-        <Container>
-          <Heading>a template.</Heading>
-        </Container>
-        <Container>
-          <Loading />
-        </Container>
-      </Row>
-    </Col>
+   <Container>
+     <Heading>
+       Hemingnay
+     </Heading>
+     <SubHeading>
+       An extremely bad fanfiction generator
+     </SubHeading>
+     <Input />
+   </Container> 
   )
 }
 
@@ -43,17 +35,24 @@ const Row: any = styled.div`
 `;
 
 const Container: any = styled.div`
-  display: flex;
-  flex: 1;
-  background-color: ${Theme.color.primary};
-  margin: 5px;
+  display: grid;
+  background-color: ${Theme.color.blue};
+  grid-template-rows: 1fr 1fr 6fr;
+  justify-items: center;
+  text-align: center; 
+  width: 100%;
 `;
 
-const Heading: any = styled.p`
-  color: ${Theme.color.secondary};
+const Heading: any = styled.div`
+  color: ${Theme.color.yellow};
   font-family: ${Theme.font.secondary};
-  font-size: 7rem;
-  margin: auto;
+  font-size: 10vw;
+  text-shadow: 3px 3px 0px ${Theme.color.red}
+`;
+
+const SubHeading: any = styled.div`
+  color: ${Theme.color.white};
+  font-size: 3vw;
 `;
 
 const Loading: any = styled.img.attrs(() => ({
