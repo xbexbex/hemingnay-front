@@ -41,6 +41,7 @@ const Container: any = styled.div`
   justify-items: center;
   text-align: center; 
   width: 100%;
+  padding: 50px 0 50px 0;
 `;
 
 const Heading: any = styled.div`
